@@ -6,8 +6,8 @@ itShouldCheckThatAllInstalledSoftwareExists() {
 }
 
 itShouldMatchTheDesiredVersions() {
-  doesMatchVersion node v15.0.1
-  doesMatchVersion npm 7.0.3
+  doesMatchVersion node v16.10.0
+  doesMatchVersion npm 7.24.0
 }
 
 doesCommandExist() {
@@ -20,7 +20,7 @@ doesCommandExist() {
 doesMatchVersion() {
     VERSION=$($1 -v|grep -i "$2")
     if [ -z "$VERSION" ]; then
-      echo "Error: $1 version $2 is not found." >&2
+      echo "Error: $1 version $2 is not found, found $($1 -v) instead." >&2
       exit 1
     fi
 }

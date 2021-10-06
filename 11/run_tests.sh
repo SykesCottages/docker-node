@@ -20,7 +20,7 @@ doesCommandExist() {
 doesMatchVersion() {
     VERSION=$($1 -v|grep -i "$2")
     if [ -z "$VERSION" ]; then
-      echo "Error: $1 version $2 is not found." >&2
+      echo "Error: $1 version $2 is not found, found $($1 -v) instead." >&2
       exit 1
     fi
 }
