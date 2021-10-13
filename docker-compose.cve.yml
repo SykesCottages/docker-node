@@ -1,0 +1,115 @@
+version: "2"
+
+services:
+
+  node-base:
+    build: base
+    command: base
+    entrypoint: /security/parse-cve.sh
+    volumes:
+      - ./cve-reports:/cve-reports
+      - ./scripts/parse-cve.sh:/security/parse-cve.sh
+
+  node-4:
+    build: '4/.'
+    command: '4'
+    entrypoint: /security/parse-cve.sh
+    volumes:
+      - ./cve-reports:/cve-reports
+      - ./scripts/parse-cve.sh:/security/parse-cve.sh
+
+  node-5:
+    build: '5/.'
+    command: '5'
+    entrypoint: /security/parse-cve.sh
+    volumes:
+      - ./cve-reports:/cve-reports
+      - ./scripts/parse-cve.sh:/security/parse-cve.sh
+
+  node-6:
+    build: '6/.'
+    command: '6'
+    entrypoint: /security/parse-cve.sh
+    volumes:
+      - ./cve-reports:/cve-reports
+      - ./scripts/parse-cve.sh:/security/parse-cve.sh
+
+  node-7:
+    build: '7/.'
+    command: '7'
+    entrypoint: /security/parse-cve.sh
+    volumes:
+      - ./cve-reports:/cve-reports
+      - ./scripts/parse-cve.sh:/security/parse-cve.sh
+
+  node-8:
+    build: '8/.'
+    command: '8'
+    entrypoint: /security/parse-cve.sh
+    volumes:
+      - ./cve-reports:/cve-reports
+      - ./scripts/parse-cve.sh:/security/parse-cve.sh
+
+  node-9:
+    build: '9/.'
+    command: '9'
+    entrypoint: /security/parse-cve.sh
+    volumes:
+      - ./cve-reports:/cve-reports
+      - ./scripts/parse-cve.sh:/security/parse-cve.sh
+
+  node-10:
+    build: '10/.'
+    command: '10'
+    entrypoint: /security/parse-cve.sh
+    volumes:
+      - ./cve-reports:/cve-reports
+      - ./scripts/parse-cve.sh:/security/parse-cve.sh
+
+  node-11:
+    build: '11/.'
+    command: '11'
+    entrypoint: /security/parse-cve.sh
+    volumes:
+      - ./cve-reports:/cve-reports
+      - ./scripts/parse-cve.sh:/security/parse-cve.sh
+
+  node-12:
+    build: '12/.'
+    command: '12'
+    entrypoint: /security/parse-cve.sh
+    volumes:
+      - ./cve-reports:/cve-reports
+      - ./scripts/parse-cve.sh:/security/parse-cve.sh
+
+  node-13:
+    build: '13/.'
+    command: '13'
+    entrypoint: /security/parse-cve.sh
+    volumes:
+      - ./cve-reports:/cve-reports
+      - ./scripts/parse-cve.sh:/security/parse-cve.sh
+
+  node-14:
+    build: '14/.'
+    command: '14'
+    entrypoint: /security/parse-cve.sh
+    volumes:
+      - ./cve-reports:/cve-reports
+      - ./scripts/parse-cve.sh:/security/parse-cve.sh
+
+  node-15:
+    build: '15/.'
+    command: '15'
+    entrypoint: /security/parse-cve.sh
+    volumes:
+      - ./cve-reports:/cve-reports
+      - ./scripts/parse-cve.sh:/security/parse-cve.sh
+
+  node-16:
+    build: '16/.'
+    command: '16'
+    entrypoint: /security/parse-cve.sh
+    volumes:
+      - ./cve-reports:/cve-reports
+      - ./scripts/parse-cve.sh:/security/parse-cve.sh
