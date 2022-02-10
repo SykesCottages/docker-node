@@ -1,9 +1,9 @@
 FROM sykescottages/node:base
 
-ENV NODE_VERSION v16.14.0
+ENV NODE_VERSION v17.4.0
 
 RUN curl -L "https://nodejs.org/dist/$NODE_VERSION/node-$NODE_VERSION-linux-x64.tar.xz" > "/tmp/node-$NODE_VERSION-linux-x64.tar.xz" && \
-    echo "c75197be567edc509d73e4de4fbbbcffa867c5dc7798543135f5b461942fd780c563d2c4cc1599a8e6b09ecb39d94a72  /tmp/node-$NODE_VERSION-linux-x64.tar.xz" | sha384sum --check && \
+    echo "88f68f2ee4c89c14ad6bcbde73459d9214bee1feacf2fbde221bfc5000ad417b90c99a6d90a26bb66da8020bf3a791df  /tmp/node-$NODE_VERSION-linux-x64.tar.xz" | sha384sum --check && \
     tar -xf /tmp/node-$NODE_VERSION-linux-x64.tar.xz -C /tmp && \
     mv /tmp/node-$NODE_VERSION-linux-x64/bin/* /usr/local/bin/. && \
     mv /tmp/node-$NODE_VERSION-linux-x64/include/* /usr/local/include/. && \
