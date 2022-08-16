@@ -8,23 +8,23 @@ We opted for this path to utilise aptitude so we could manage packages easier an
 
 ## Available Versions
 Tag - NodeJs Version
-- 4 - v4.9.1 (Deprecated)
-- 5 - v5.12.0 (Deprecated)
-- 6 - v6.17.1 (Deprecated)
-- 7 - v7.10.1 (Deprecated)
-- 8 - v8.17.0 (Deprecated)
-- 9 - v9.11.2 (Deprecated)
-- 10 - v10.24.1 (Deprecated)
-- 11 - v11.15.0 (Deprecated)
-- 12 - v12.22.12 (Deprecated)
-- 13 - v13.14.0 (Deprecated)
-- 14 - **v14.20.0 (LTS Maintenance EOL 23-04-30)**
-- 15 - v15.14.0 (Deprecated)
-- 16 - **v16.17.0 (LTS Active EOL 2023-09-11)**
-- 17 - v17.9.1 (Deprecated)
-- 18 - **v18.7.0 (LTS Current EOL 2025-04-30)**
-- 19 - v19 (Pending)
-- 20 - v20 (Pending)
+- v4.9.1 (Deprecated) - `sykescottages/node:4`
+- v5.12.0 (Deprecated) - `sykescottages/node:5`
+- v6.17.1 (Deprecated) - `sykescottages/node:6`
+- v7.10.1 (Deprecated) - `sykescottages/node:7`
+- v8.17.0 (Deprecated) - `sykescottages/node:8`
+- v9.11.2 (Deprecated) - `sykescottages/node:9`
+- v10.24.1 (Deprecated) - `sykescottages/node:10`
+- v11.15.0 (Deprecated) - `sykescottages/node:11`
+- v12.22.12 (Deprecated) - `sykescottages/node:12`
+- v13.14.0 (Deprecated) - `sykescottages/node:13`
+- **v14.20.0 (LTS Maintenance EOL 23-04-30)** - `sykescottages/node:14`
+- v15.14.0 (Deprecated) - `sykescottages/node:15`
+- **v16.17.0 (LTS Active EOL 2023-09-11)** - `sykescottages/node:16`
+- v17.9.1 (Deprecated) - `sykescottages/node:17`
+- **v18.7.0 (LTS Current EOL 2025-04-30)** - `sykescottages/node:18`
+- v19 (Pending)
+- v20 (Pending)
 
 ## Usage
 
