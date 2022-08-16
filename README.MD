@@ -33,7 +33,7 @@ Pulling an image:
 docker pull sykescottages/node:version
 ```
 
-Running an container:
+Running a container:
 ```
 docker run -it sykescottages/node:version
 ```
