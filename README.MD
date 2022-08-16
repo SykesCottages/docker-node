@@ -7,23 +7,24 @@ All of our Node images are based off the [Base Sykes](https://github.com/SykesCo
 We opted for this path to utilise aptitude so we could manage packages easier and utilise the package integrity verification that comes with apititude.
 
 ## Available Versions
-- v4.9.1 (Deprecated)
-- v5.12.0 (Deprecated)
-- v6.17.1 (Deprecated)
-- v7.10.1 (Deprecated)
-- v8.17.0 (Deprecated)
-- v9.11.2 (Deprecated)
-- v10.24.1 (Deprecated)
-- v11.15.0 (Deprecated)
-- v12.22.12 (Deprecated)
-- v13.14.0 (Deprecated)
-- **v14.20.0 (LTS Maintenance EOL 23-04-30)**
-- v15.14.0 (Deprecated)
-- **v16.17.0 (LTS Active EOL 2023-09-11)**
-- v17.9.1 (Deprecated)
-- **v18.7.0 (LTS Current EOL 2025-04-30)**
-- v19 (Pending)
-- v20 (Pending)
+Tag - NodeJs Version
+- 4 - v4.9.1 (Deprecated)
+- 5 - v5.12.0 (Deprecated)
+- 6 - v6.17.1 (Deprecated)
+- 7 - v7.10.1 (Deprecated)
+- 8 - v8.17.0 (Deprecated)
+- 9 - v9.11.2 (Deprecated)
+- 10 - v10.24.1 (Deprecated)
+- 11 - v11.15.0 (Deprecated)
+- 12 - v12.22.12 (Deprecated)
+- 13 - v13.14.0 (Deprecated)
+- 14 - **v14.20.0 (LTS Maintenance EOL 23-04-30)**
+- 15 - v15.14.0 (Deprecated)
+- 16 - **v16.17.0 (LTS Active EOL 2023-09-11)**
+- 17 - v17.9.1 (Deprecated)
+- 18 - **v18.7.0 (LTS Current EOL 2025-04-30)**
+- 19 - v19 (Pending)
+- 20 - v20 (Pending)
 
 ## Usage
 
