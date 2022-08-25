@@ -24,3 +24,5 @@ do
   fi
   docker rmi sykescottages/node:${VERSION}
 done
+
+docker rmi sykescottages/node:base
