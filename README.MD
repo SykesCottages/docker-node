@@ -18,11 +18,11 @@ We opted for this path to utilise aptitude so we could manage packages easier an
 - v11.15.0 (Deprecated) - `sykescottages/node:11`
 - v12.22.12 (Deprecated) - `sykescottages/node:12`
 - v13.14.0 (Deprecated) - `sykescottages/node:13`
-- **v14.20.0 (LTS Maintenance EOL 23-04-30)** - `sykescottages/node:14`
+- **v14.20.1 (LTS Maintenance EOL 23-04-30)** - `sykescottages/node:14`
 - v15.14.0 (Deprecated) - `sykescottages/node:15`
-- **v16.17.0 (LTS Active EOL 2023-09-11)** - `sykescottages/node:16`
+- **v16.18.0 (LTS Active EOL 2023-09-11)** - `sykescottages/node:16`
 - v17.9.1 (Deprecated) - `sykescottages/node:17`
-- **v18.7.0 (LTS Current EOL 2025-04-30)** - `sykescottages/node:18`
+- **v18.11.0 (LTS Current EOL 2025-04-30)** - `sykescottages/node:18`
 - v19 (Pending)
 - v20 (Pending)
 
