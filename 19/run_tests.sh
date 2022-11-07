@@ -6,7 +6,7 @@ itShouldCheckThatAllInstalledSoftwareExists() {
 }
 
 itShouldMatchTheDesiredVersions() {
-  doesMatchVersion node v19.0.0
+  doesMatchVersion node v19.0.1
   doesMatchVersion npm 8.19.2
 }
 
