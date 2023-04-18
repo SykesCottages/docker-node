@@ -22,7 +22,7 @@ We opted for this path to utilise aptitude so we could manage packages easier an
 - v15.14.0 (Deprecated) - `sykescottages/node:15`
 - **v16.20.0 (LTS Active EOL 2023-09-11)** - `sykescottages/node:16`
 - v17.9.1 (Deprecated) - `sykescottages/node:17`
-- **v18.15.0 (LTS Current EOL 2025-04-30)** - `sykescottages/node:18`
+- **v18.16.0 (LTS Current EOL 2025-04-30)** - `sykescottages/node:18`
 - **v19.9.0 (EOL 2023-06-01)** - `sykescottages/node:19`
 - v20 (Pending)
 
