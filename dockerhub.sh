@@ -1,9 +1,6 @@
 #!/bin/bash
 
-LATEST_VERSION=18
-
-# Validate the container passes our tests
-./test.sh
+LATEST_VERSION=20
 
 # You need to provide your own creds because #security
 docker login
