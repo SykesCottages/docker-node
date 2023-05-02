@@ -2,7 +2,7 @@ FROM sykescottages/base:ubuntu-22-04
 
 RUN apt-get update; \
     apt-get install -y -q \
-        python \
+        python3 \
         ruby \
         ruby-dev \
         gcc \
