@@ -113,3 +113,30 @@ services:
     volumes:
       - ./cve-reports:/cve-reports
       - ./scripts/parse-cve.sh:/security/parse-cve.sh
+
+  node-18:
+    build: '18/.'
+    command: '18'
+    entrypoint: /security/parse-cve.sh
+    volumes:
+      - ./cve-reports:/cve-reports
+      - ./scripts/parse-cve.sh:/security/parse-cve.sh
+
+
+  node-19:
+    build: '19/.'
+    command: '19'
+    entrypoint: /security/parse-cve.sh
+    volumes:
+      - ./cve-reports:/cve-reports
+      - ./scripts/parse-cve.sh:/security/parse-cve.sh
+
+
+  node-20:
+    build: '20/.'
+    command: '20'
+    entrypoint: /security/parse-cve.sh
+    volumes:
+      - ./cve-reports:/cve-reports
+      - ./scripts/parse-cve.sh:/security/parse-cve.sh
+

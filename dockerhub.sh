@@ -3,23 +3,16 @@
 LATEST_VERSION=20
 
 # You need to provide your own creds because #security
-docker login
+docker login >> /dev/null 2>&1 &
 
-docker build --no-cache -t sykescottages/node:base base
-docker push sykescottages/node:base
+./build-base.sh >> /dev/null 2>&1 &
 
 VERSIONS=( 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 )
 for VERSION in "${VERSIONS[@]}"
 do
-  docker build --no-cache -t sykescottages/node:${VERSION} $VERSION
-  docker push sykescottages/node:${VERSION}
-  # Tagging latest version
-  if [[ "$LATEST_VERSION" == "$VERSION" ]]; then
-    docker tag sykescottages/node:${VERSION} sykescottages/node:latest
-    docker push sykescottages/node:latest
-    docker rmi sykescottages/node:latest
-  fi
-  docker rmi sykescottages/node:${VERSION}
+  ./build.sh $VERSION $LATEST_VERSION >> /dev/null 2>&1 &
 done
 
-docker rmi sykescottages/node:base
+wait
+
+docker rmi sykescottages/node:base >> /dev/null 2>&1 &
