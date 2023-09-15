@@ -7,7 +7,7 @@ docker login >> /dev/null 2>&1
 
 ./build-base.sh >> /dev/null 2>&1
 
-VERSIONS=( 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 )
+VERSIONS=($(find . -type d -regex '\.*/[0-9]+' | sort | sed 's/\.\///'))
 for VERSION in "${VERSIONS[@]}"
 do
   ./build.sh $VERSION $LATEST_VERSION >> /dev/null 2>&1 &

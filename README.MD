@@ -26,6 +26,11 @@ We opted for this path to utilise aptitude so we could manage packages easier an
 - v19.9.0 (Deprecated) - `sykescottages/node:19`
 - **v20.6.1 (LTS Current EOL 2026-04-30)** - `sykescottages/node:20` 
 
+## Image Itinerary
+
+For better visibility of packages there is now an included aptitude itinerary with each tag, this is located in the corresponding folder to the tag.
+This will give better clarity on package version changes and be reflected in the git history.
+
 ## Usage
 
 Pulling an image:
