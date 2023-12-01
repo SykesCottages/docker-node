@@ -13,5 +13,6 @@ RUN apt-get autoremove -y -q && \
     rm -rf /var/lib/apt/lists/*
 
 COPY entrypoint /usr/local/bin/
+COPY getnode /usr/local/bin/
 
 ENTRYPOINT [ "entrypoint" ]

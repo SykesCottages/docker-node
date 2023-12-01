@@ -1,0 +1,33 @@
+#!/bin/bash
+
+NODE_VERSION=$1
+ARCH=x64
+
+if [ "x86_64" == "$(arch)" ]; then
+  ARCH=x64
+elif [ "armv71" == "$(arch)" ]; then
+  ARCH=armv7l
+elif [ "aarch64" == "$(arch)" ]; then
+  ARCH=arm64
+fi
+
+NODE_PACKAGE=node-$NODE_VERSION-linux-$ARCH
+
+curl -s -L "https://nodejs.org/dist/$NODE_VERSION/SHASUMS256.txt" > /tmp/node-checksum
+curl -s -L "https://nodejs.org/dist/$NODE_VERSION/$NODE_PACKAGE.tar.xz" > "/tmp/$NODE_PACKAGE.tar.xz"
+
+CHECKSUM=$(cat /tmp/node-checksum | grep "$NODE_PACKAGE.tar.xz" | awk '{print $1}')
+
+if ! echo "$CHECKSUM  /tmp/$NODE_PACKAGE.tar.xz" | sha256sum --check; then
+  echo "Invalid Checksum"
+  exit 1
+fi
+
+tar -xf /tmp/$NODE_PACKAGE.tar.xz -C /tmp
+
+mv /tmp/$NODE_PACKAGE/bin/* /usr/local/bin/.
+mv /tmp/$NODE_PACKAGE/include/* /usr/local/include/.
+mv /tmp/$NODE_PACKAGE/lib/* /usr/local/lib/.
+mv /tmp/$NODE_PACKAGE/share/* /usr/local/share/.
+
+rm -rf /tmp/*
