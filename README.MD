@@ -24,7 +24,6 @@ Testing you have the right architecture:
 docker run -it --platform=<ARCHITECTURE> sykescottages/node:<VERSION> arch
 ```
 
-
 ## Supported versions and available tags
 
 - v4.9.1 (Deprecated) - `sykescottages/node:4`

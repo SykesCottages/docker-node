@@ -1,4 +1,5 @@
-FROM --platform=$BUILDPLATFORM sykescottages/base:ubuntu-22-04
+ARG ARCH=amd64
+FROM sykescottages/base:ubuntu-22-04-$ARCH
 
 RUN apt-get update && \
     apt-get install -y -q \
