@@ -1,3 +1,3 @@
-FROM sykescottages/node:base
+FROM --platform=$BUILDPLATFORM sykescottages/node:base
 
 RUN getnode v19.9.0

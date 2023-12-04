@@ -2,13 +2,15 @@
 
 NODE_VERSION=$1
 ARCH=x64
+ARCHITECTURE=$(arch)
 
-if [ "x86_64" == "$(arch)" ]; then
+if [ "x86_64" == "$ARCHITECTURE" ]; then
   ARCH=x64
-elif [ "armv71" == "$(arch)" ]; then
-  ARCH=armv7l
-elif [ "aarch64" == "$(arch)" ]; then
+elif [ "aarch64" == "$ARCHITECTURE" ]; then
   ARCH=arm64
+else
+  echo "Unsupported architecture $ARCHITECTURE"
+  exit 1
 fi
 
 NODE_PACKAGE=node-$NODE_VERSION-linux-$ARCH
