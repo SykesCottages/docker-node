@@ -7,7 +7,8 @@ RUN apt-get update && \
         ruby \
         ruby-dev \
         gcc \
-        make
+        make \
+        build-essential
 
 RUN apt-get autoremove -y -q && \
     apt-get autoclean -y -q && \
