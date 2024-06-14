@@ -44,7 +44,7 @@ docker run -it --platform=<ARCHITECTURE> sykescottages/node:<VERSION> arch
 - v19.9.0 (Deprecated) - `sykescottages/node:19`
 - **v20.14.0 (LTS Current EOL 2026-04-30)** - `sykescottages/node:20`
 - **v21.7.3 (Current EOL 2024-06-01)** - `sykescottages/node:21`
-- **v22.2.0 (Current EOL 2027-04-30)** - `sykescottages/node:22`
+- **v22.3.0 (Current EOL 2027-04-30)** - `sykescottages/node:22`
 
 ## Image Itinerary
 
