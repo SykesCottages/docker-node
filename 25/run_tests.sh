@@ -6,8 +6,8 @@ itShouldCheckThatAllInstalledSoftwareExists() {
 }
 
 itShouldMatchTheDesiredVersions() {
-  doesMatchVersion node v23.11.1
-  doesMatchVersion npm 10.9.2
+  doesMatchVersion node v25.8.1
+  doesMatchVersion npm 11.11.0
 }
 
 doesCommandExist() {

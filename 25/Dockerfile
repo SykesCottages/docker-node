@@ -1,4 +1,4 @@
 ARG ARCH=amd64
 FROM sykescottages/node:base-$ARCH
 
-RUN getnode v20.20.1
+RUN getnode v25.8.1
